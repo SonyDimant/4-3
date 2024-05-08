@@ -1,0 +1,166 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="NewA.MainWindow"
+        Title="NewA"
+		Background = "White">
+
+	<!--<StackPanel Orientation="Horizontal"
+        FlowDirection="RightToLeft">
+        <Button>Button</Button>
+        <TextBlock>TextBlock is readonly</TextBlock>
+        <TextBox>TextBox can be edited</TextBox>
+        <ComboBox Margin =" 10,10,0,13" x:Name="ComboBox_One">
+		<ComboBoxItem Content="Coffie"></ComboBoxItem>
+		<ComboBoxItem Content="Milk"></ComboBoxItem>
+			</ComboBox>
+        <ListBox x:Name="ListBox_One"></ListBox>
+    </StackPanel>-->
+	<!--<DockPanel>
+    <Button DockPanel.Dock="Top">Button</Button>
+    <TextBlock DockPanel.Dock="Bottom">TextBlock is readonly</TextBlock>
+    <TextBox DockPanel.Dock="Left">TextBox can be edited</TextBox>
+    <ComboBox DockPanel.Dock="Right" x:Name="ComboBox_One"></ComboBox>
+    <ListBox x:Name="ListBox_One" Background="LightCoral"></ListBox>
+  </DockPanel>-->
+	<!--<WrapPanel Orientation="Horizontal">
+    <Button>Button</Button>
+    <TextBlock>TextBlock is readonly</TextBlock>
+    <TextBox>TextBox can be edited</TextBox>
+    <ComboBox x:Name="ComboBox_One"></ComboBox>
+	<ListBox x:Name="ListBox_One" Background="LightCoral"></ListBox>
+  </WrapPanel>-->
+	<!--<Canvas>
+    <Button Canvas.Left="100">Button</Button>
+    <TextBlock Canvas.Right="50" Canvas.Top="200">TextBlock is readonly</TextBlock>
+    <TextBox Canvas.Right="50" Canvas.Top="100">TextBox can be edited</TextBox>
+    <ComboBox Canvas.Left="100" Canvas.Bottom="100" x:Name="ComboBox_One" ></ComboBox>
+    <ListBox Canvas.Left="100" Canvas.Top="100" x:Name="ListBox_One"></ListBox>
+  </Canvas>-->
+	<!--<Grid RowDefinitions="auto,auto,auto,auto,auto" 
+        ColumnDefinitions="*,*,*,*,*" 
+        Background="LightGoldenrodYellow"
+        ShowGridLines="True">
+    <Button Grid.Row="0" Grid.Column="0">Button</Button>
+    <TextBlock Grid.Row="1" Grid.Column="1">TextBlock is readonly</TextBlock>
+    <TextBox Grid.Row="2"  Grid.Column="2">TextBox can be edited</TextBox>
+    <ComboBox Grid.Row="3" Grid.Column="3" x:Name="ComboBox_One"></ComboBox>
+    <ListBox Grid.Row="4" Grid.Column="4" x:Name="ListBox_One"></ListBox>
+  </Grid>-->
+	<!--<Grid ShowGridLines="True">
+    <Grid.RowDefinitions>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+      <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition></ColumnDefinition>
+      <ColumnDefinition></ColumnDefinition>
+      <ColumnDefinition></ColumnDefinition>
+    </Grid.ColumnDefinitions>
+    <Button Grid.Row="0"
+            Grid.Column="0"
+            Content="Button 0,0"></Button>
+    <Button Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="Button 1,1"></Button>
+    <Button Grid.Row="2" Grid.Column="2">Button 2,2</Button>
+  </Grid>-->
+    <!--<Grid ShowGridLines="True"
+        RowDefinitions="*,*,*"
+        ColumnDefinitions="*,*,*">
+		<Button Grid.Row="0"
+				Grid.Column="0"
+				Grid.RowSpan="2"
+				Background="Bisque"
+				VerticalAlignment="Stretch"
+				HorizontalAlignment="Stretch">Button 0,0</Button>
+		<Button Grid.Row="1"
+				Grid.Column="1"
+				Grid.ColumnSpan="2"
+				Background="Cyan"
+				VerticalAlignment="Stretch"
+				HorizontalAlignment="Stretch">Button 1,1</Button>
+				--><!--x:Name="Button11"
+				Click="Button11_Click">Button 1,1</Button>--><!--
+		<Button Grid.Row="2"
+				Grid.Column="2"
+				Background="Violet"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				Content="Button 2,2"></Button>
+	</Grid>-->
+	<Grid Background = "#c8a99e"
+          RowDefinitions = "auto, *,auto, auto"
+          ColumnDefinitions = "*, *, *">
+		
+		<Border Background="Gainsboro"
+			BorderBrush="Black"
+			Grid.ColumnSpan ="3"
+			BorderThickness="1">
+			
+			<DockPanel Background = "#b3422e"
+				   Height = "40"
+				   HorizontalAlignment = "Stretch"
+				   Grid.Row = "0"
+				   Grid.ColumnSpan = "3">
+				<TextBlock Margin = "5 10">Home</TextBlock>
+				<TextBlock Margin = "10 10">About</TextBlock>
+				<TextBlock Margin = "10 10">Blog's Main Topic 1</TextBlock>
+				<TextBlock Margin = "10 10">Blog's Main Topic 3</TextBlock>
+				<TextBlock Margin = "10 10">Associated Blogs</TextBlock>
+				<TextBlock Margin = "0 10 5 15" TextAlignment = "Right">RSS</TextBlock>
+			</DockPanel>
+		</Border>
+
+		<StackPanel Grid.Row = "1"
+				Grid.ColumnSpan = "2"
+				Background = "#c8a99e"
+				Orientation="Vertical"
+				
+				>
+			
+			<TextBlock Margin= "0 15" > Article 1</TextBlock>
+			
+			<TextBlock TextWrapping = "Wrap" Margin = "0 10">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh ipsum, finibus vel accumsan sit amet, facilisis quis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras massa ante, facilisis at semper vel, suscipit a elit. Vestibulum sit amet volutpat tellus. Integer gravida congue consequat. Nam pellentesque nibh libero, a interdum diam efficitur quis. In iaculis turpis ut molestie pretium.
+
+				Vestibulum felis ipsum, ultricies ac arcu nec, aliquam consectetur magna. Proin at iaculis risus. Pellentesque sit amet auctor massa, vitae commodo enim. Sed vitae ex egestas, tincidunt nunc et, pulvinar dolor. Nulla lacinia sem in libero gravida fringilla interdum sit amet lorem. Etiam fringilla magna nisi, in ornare orci interdum vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis sapien mi, vitae eleifend neque feugiat in. Nunc vehicula sem leo, at lobortis sem iaculis id.
+
+			</TextBlock>
+			</StackPanel>
+		
+		<StackPanel Grid.Row = "2" Grid.ColumnSpan =" 2" >
+			
+			<TextBlock Margin =" 0,0,0,5">Tags: Tag1 Tag2 Tag3 Tag4</TextBlock>
+		</StackPanel>
+		
+		<StackPanel Grid.Row = "2" Grid.ColumnSpan =" 2" >
+			
+			<TextBlock  Margin ="0,0,10,5 " HorizontalAlignment="Right"  >Rate this article:</TextBlock>
+		</StackPanel>
+
+
+
+		<StackPanel Grid.Row = "1"
+				Grid.Column = "2"
+				Background = "#c8a99e">
+			
+			<TextBlock TextWrapping = "Wrap" Margin= "3, 55,0 ,0 ">
+				 Facilisis quis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras massa ante, facilisis at semper vel, suscipit a elit. Vestibulum sit amet volutpat tellus. Integer gravida congue consequat. Nam pellentesque nibh libero, a interdum diam efficitur quis. In iaculis turpis ut molestie pretium.
+			</TextBlock>
+			
+			<Button HorizontalAlignment="Right" Margin = "0,0,5,0 " > More</Button>
+			
+			<TextBlock HorizontalAlignment="Right" Margin = "0,0,5,0 "> Yesterday</TextBlock>
+
+			<TextBlock TextWrapping = "Wrap" Margin= "3, 0,0 ,0 ">
+				Facilisis quis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras massa ante, facilisis at semper vel, suscipit a elit. Vestibulum sit amet volutpat tellus. Integer gravida congue consequat. Nam pellentesque nibh libero, a interdum diam efficitur quis. In iaculis turpis ut molestie pretium.
+			</TextBlock>
+			
+			<Button HorizontalAlignment="Right" Margin = "0,0,5,0 " > More</Button>
+			
+			<TextBlock HorizontalAlignment="Right" Margin = "0,0,5,0 "> 1 week ago</TextBlock>
+		</StackPanel>
+	</Grid>
+</Window>
