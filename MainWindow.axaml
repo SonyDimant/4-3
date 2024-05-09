@@ -91,6 +91,7 @@
 				Content="Button 2,2"></Button>
 	</Grid>-->
 	<Grid Background = "#c8a99e"
+		  ShowGridLines="True"
           RowDefinitions = "auto, *,auto, auto"
           ColumnDefinitions = "*, *, *">
 		
@@ -120,14 +121,15 @@
 				
 				>
 			
-			<TextBlock Margin= "0 15" > Article 1</TextBlock>
+			<TextBlock Margin= "5, 15" > Article 1</TextBlock>
 			
-			<TextBlock TextWrapping = "Wrap" Margin = "0 10">
+			<TextBlock TextWrapping = "Wrap" Margin = "5, 10">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nibh ipsum, finibus vel accumsan sit amet, facilisis quis dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras massa ante, facilisis at semper vel, suscipit a elit. Vestibulum sit amet volutpat tellus. Integer gravida congue consequat. Nam pellentesque nibh libero, a interdum diam efficitur quis. In iaculis turpis ut molestie pretium.
 
 				Vestibulum felis ipsum, ultricies ac arcu nec, aliquam consectetur magna. Proin at iaculis risus. Pellentesque sit amet auctor massa, vitae commodo enim. Sed vitae ex egestas, tincidunt nunc et, pulvinar dolor. Nulla lacinia sem in libero gravida fringilla interdum sit amet lorem. Etiam fringilla magna nisi, in ornare orci interdum vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sagittis sapien mi, vitae eleifend neque feugiat in. Nunc vehicula sem leo, at lobortis sem iaculis id.
 
 			</TextBlock>
+			<Image Height="350" Width="350"  Source = "C:\Users\diman\OneDrive\Рабочий стол\NewA\Assets\загруженное.jpg"> </Image>
 			</StackPanel>
 		
 		<StackPanel Grid.Row = "2" Grid.ColumnSpan =" 2" >
@@ -135,9 +137,10 @@
 			<TextBlock Margin =" 0,0,0,5">Tags: Tag1 Tag2 Tag3 Tag4</TextBlock>
 		</StackPanel>
 		
-		<StackPanel Grid.Row = "2" Grid.ColumnSpan =" 2" >
+		<StackPanel  Grid.Row = "2" Grid.ColumnSpan =" 2" >
+				<TextBlock Margin ="0,0,5,0 " HorizontalAlignment="Right"  >Rate this article: </TextBlock>
+				<Image HorizontalAlignment="Right" Height ="50" Width="100" Source="C:\Users\diman\OneDrive\Рабочий стол\NewA\Assets\4stars.png"> </Image>
 			
-			<TextBlock  Margin ="0,0,10,5 " HorizontalAlignment="Right"  >Rate this article:</TextBlock>
 		</StackPanel>
 
 
