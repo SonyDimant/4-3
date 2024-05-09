@@ -91,7 +91,7 @@
 				Content="Button 2,2"></Button>
 	</Grid>-->
 	<Grid Background = "#c8a99e"
-		  ShowGridLines="True"
+		  ShowGridLines="False"
           RowDefinitions = "auto, *,auto, auto"
           ColumnDefinitions = "*, *, *">
 		
@@ -138,8 +138,8 @@
 		</StackPanel>
 		
 		<StackPanel  Grid.Row = "2" Grid.ColumnSpan =" 2" >
-				<TextBlock Margin ="0,0,5,0 " HorizontalAlignment="Right"  >Rate this article: </TextBlock>
-				<Image HorizontalAlignment="Right" Height ="50" Width="100" Source="C:\Users\diman\OneDrive\Рабочий стол\NewA\Assets\4stars.png"> </Image>
+				<TextBlock Margin ="0,0,5,0 " HorizontalAlignment="Right"  >Rate this article: 4/5</TextBlock>
+				<!--<Image HorizontalAlignment="Right" Height ="50" Width="100" Source="C:\Users\diman\OneDrive\Рабочий стол\NewA\Assets\4stars.png"> </Image>-->
 			
 		</StackPanel>
 
