@@ -133,13 +133,12 @@
 			</StackPanel>
 		
 		<StackPanel Grid.Row = "2" Grid.ColumnSpan =" 2" >
-			
 			<TextBlock Margin =" 0,0,0,5">Tags: Tag1 Tag2 Tag3 Tag4</TextBlock>
 		</StackPanel>
 		
-		<StackPanel  Grid.Row = "2" Grid.ColumnSpan =" 2" >
-				<TextBlock Margin ="0,0,5,0 " HorizontalAlignment="Right"  >Rate this article: 4/5</TextBlock>
-				<!--<Image HorizontalAlignment="Right" Height ="50" Width="100" Source="C:\Users\diman\OneDrive\Рабочий стол\NewA\Assets\4stars.png"> </Image>-->
+		<StackPanel   Grid.Row = "2" Grid.ColumnSpan =" 2"  Orientation="Horizontal">
+				<TextBlock Margin ="600,0,5,0 " HorizontalAlignment="Right"  >Rate this article: 4/5</TextBlock>
+				<Image HorizontalAlignment="Right" Height ="50" Width="100" Source="C:\Users\diman\OneDrive\Рабочий стол\NewA\Assets\4stars.png"> </Image>
 			
 		</StackPanel>
 
